@@ -1,0 +1,18 @@
+a = int(input("Введите число A: "))
+b = int(input("Введите число B: "))
+c = int(input("Введите число C: "))
+
+# Считаем, сколько чисел больше нуля
+count_positive = 0
+if a > 0:
+    count_positive += 1
+if b > 0:
+    count_positive += 1
+if c > 0:
+    count_positive += 1
+
+# Проверяем, что положительное ровно одно
+if count_positive == 1:
+    print("Истина: ровно одно число положительное")
+else:
+    print("Ложь")
